@@ -10,6 +10,7 @@ public class Book {
 
         while (true) {
             System.out.printf("Please key in the SKU code or type stop to quit.");
+
             input= scanner.nextLine();
             if(input.equalsIgnoreCase("java1001")) {
                 book1 = new BookDB("Java1001", "Head First Java", "Kathy Sierra and Bert Bates", "Easy to read Java workbook", 47.50);
@@ -29,17 +30,10 @@ public class Book {
             if(input.equalsIgnoreCase("Rasp1006")) {
                  book1 = new BookDB("Rasp1006","Raspberry Pi Projects for the Evil Genius","Donald Norris","A dozen fiendishly fun projects for the Raspberry Pi!",16.50);
             }
-            /*else {
-                book1 = new BookDB("not availabe","none","not available","not available",0.00);
-                break;
-            }*/
+
             if(input.equalsIgnoreCase("stop")) {
                 break;
             }
-
-            //
-
-
 
             books.add(book1);
 
